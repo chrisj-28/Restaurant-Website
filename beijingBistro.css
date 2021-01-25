@@ -1,0 +1,187 @@
+
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+html {
+    background-image: url(images/BeijingDuckSet.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    display: inline;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************
+       LAYOUT
+******************/
+
+#container {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.topNav {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(135, 3, 3, 1);
+    overflow: hidden;
+    z-index: 500;
+}
+
+.logoName {
+    color: white;
+    float: left;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logoName h1 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo {
+    display: absolute;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+}
+
+.logo img {
+    max-height: 100%;
+    width: auto;
+}
+
+.topNav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    height: 100%;
+}
+
+.topNav li {
+    display: block;
+    width: 100px;
+    height: 100%;
+    float: left;
+    padding: 15px 0px;
+    transition: 0.65s;
+}
+
+.topNav li:hover {
+    background: rgb(102, 2, 2);
+}
+
+.topNav a {
+    position: relative;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.topNav .collapsedNav {
+    display: none;
+}
+
+.header {
+    display: flex;
+    margin-top: 60px;
+    height: 300px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: inline;
+}
+
+.title h1 {
+    position: relative;
+    top: 40%;
+    border-bottom: 5px solid rgb(117, 27, 27);
+}
+
+
+.body {
+    background: rgb(117, 27, 27);
+    padding: 30px 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.menuPage {
+    padding: 10px 0;
+}
+
+.menuPage img {
+    width: 700px;
+    height: auto;
+}
+
+
+#footer {
+    background: rgb(88, 12, 12);
+    padding: 20px;
+    color: white;
+}
+
+/**********************
+order page
+**********************/
+
+.deliveryButton {
+    display: inline-block;
+    background:  rgba(135, 3, 3, 1);
+    padding: 10px 15px;
+    transition: 0.65s;
+    width: 200px;
+}
+
+.deliveryButton:hover {
+    background: rgb(88, 12, 12);
+}
+
+.deliveryButton a {
+    text-decoration: none;
+    color: white;
+}
