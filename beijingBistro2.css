@@ -1,37 +1,106 @@
-body {
-    background: blue;
+html {
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center 60px;
 }
 
+@media only screen and (max-width: 395px) {
+    html {
+        background-size: auto 250px;
+    }
+}
+
+/*******************
+Home page
+*******************/
 .container {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
+@media only screen and (max-width: 390px) {
+    .logoName {
+        display: none;
+    }
+}
+
 .header {
-    height: 100px;
+    height: 250px;
+}
+
+.title h1 {
+    font-size: 30px;
 }
 
 .topNav li {
     display: none;
 }
 
-.topNav .collapsedNav {
-    display: block;
+.navToggle {
+    margin: 12px 0;   
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
 }
 
-/* if responsive is on */
-.topNav.responsive {
-    position: relative;
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.55s;
 }
-.topNav.responsive li.collapsedNav {
-    position: absolute;
-    right: 0;
-    top: 0;
+
+.navToggleOn .bar1 {
+    -webkit-transform: rotate(315deg) translate(-8px, 6px);
+    transform: rotate(315deg) translate(-8px, 6px);
 }
-.topNav.responsive li {
-    float: none;
+  
+.navToggleOn .bar2 {opacity: 0;}
+  
+.navToggleOn .bar3 {
+    -webkit-transform: rotate(225deg) translate(8px, 7px);
+    transform: rotate(225deg) translate(8px, 7px);
+}
+
+.sideNav {
+    position: fixed;
+    height: 100%;
     display: block;
-    text-align: left;
+    width: 0;
+    top: 0;
+    right: 0;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background:  rgb(117, 27, 27);
+    text-align: center;
 }
-/*---------------------*/
+
+.sideNavButtonContainer {
+    display: block;
+    bottom: 0px;
+    height: 100%;
+}
+
+.sideNavButtonContainer a {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.sideNavButtonContainer a:hover {
+    background: rgb(163, 39, 39);
+}
+
+.menuPage img {
+    width: 90%;
+    height: auto;
+}
+
+/************************
+order page
+************************/

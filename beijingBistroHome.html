@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">	
+	<link rel="icon" href="images/logo.png">
 	<title>Beijing Bistro</title>
 	
 	<!-- external CSS/JS link -->
 	<link rel="stylesheet" href="beijingBistro.css">
-	<link rel="stylesheet" href="beijingBistro2.css" media="(max-width: 765px)">
+	<link rel="stylesheet" href="beijingBistro2.css" media="(max-width: 780px)">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="beijingBistro.js"></script>
-	<!--<link rel="stylesheet" href="css/style.css">-->
+
 	</head>
 
 	<body>
@@ -31,7 +32,21 @@
 					<li><a href="beijingBistroHome.html">MENU</a></li>
 					<li><a href="beijingBistroOrder.html">ORDER</a></li>
 					<li><a href="#">CONTACT</a></li>
-					<li class="collapsedNav"><a href="javascript: void(0);" onclick="toggleNavigationBar()">+</a></li>
+
+					<div id="sideNav" class="sideNav">
+						<div class="sideNavButtonContainer">
+							<a href="beijingBistroHome.html">MENU</a>
+							<a href="beijingBistroOrder.html">ORDER</a>
+							<a href="#">CONTACT</a>
+						</div>
+					</div>
+
+					<div id="navToggle" class="navToggle" onclick="toggleNavigationBar(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+					
 				</ul>
 				
 			</div>
